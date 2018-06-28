@@ -23,12 +23,13 @@ inoremap {}     {}
 
 " ui config
 set number
+set ruler
 set showcmd
 set cursorline
-filetype indent on
 set wildmenu
 set lazyredraw
 set showmatch
+filetype indent on
 
 " Searching
 set hls
@@ -38,8 +39,8 @@ set incsearch
 set foldenable
 set foldlevelstart=10
 set foldnestmax=10
-nnoremap <space> za
 set foldmethod=indent
+nnoremap <leader> za
 
 " Movement
 nnoremap j gj
@@ -56,3 +57,6 @@ noremap <leader>v :r !pbpaste<CR>
 noremap <leader>w :w<CR>
 noremap <leader><leader> V
 noremap <leader>r <c-r>
+
+" Colorscheme
+color slate

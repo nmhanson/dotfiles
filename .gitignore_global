@@ -1,0 +1,12 @@
+# Editor and IDE generated files #
+##################################
+
+# Jetbrains
+.idea/
+
+# VIM
+*.swp
+
+# Mergetool
+*.orig
+
