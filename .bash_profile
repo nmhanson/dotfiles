@@ -14,3 +14,7 @@ parse_git_branch() {
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$PATH:~/usr_scripts"
+
+# Long History
+HISTFILESIZE=1000000000
+HISTSIZE=1000000
