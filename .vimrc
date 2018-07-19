@@ -34,6 +34,8 @@ filetype indent on
 " Searching
 set hls
 set incsearch
+set ignorecase
+set smartcase
 
 " Folding
 set foldenable
