@@ -1,3 +1,5 @@
+set nocompatible
+
 " remap <esc>
 imap jj <Esc>
 
@@ -62,3 +64,22 @@ noremap <leader>r <c-r>
 
 " Colorscheme
 color slate
+
+" Optional vim plugins
+function! PluginInit()
+    if !empty(glob("~/.vim/bundle/Vundle.vim"))
+        filetype off
+        set rtp+=~/.vim/bundle/Vundle.vim
+        call vundle#begin()
+
+        " Plugins
+        Plugin 'VundleVim/Vundle.vim'
+        Plugin 'zxqfl/tabnine-vim'
+        Plugin 'rust-lang/rust.vim'
+
+        call vundle#end()
+        filetype plugin indent on
+    endif
+endfunction
+
+call PluginInit()
